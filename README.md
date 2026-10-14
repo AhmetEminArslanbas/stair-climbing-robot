@@ -38,7 +38,7 @@ Robotun mekanik hareket yazılımını, görüntü işleme tarafını ve yer ist
 ```mermaid
 flowchart LR
     GP[Gamepad] --> U[Unity yer istasyonu]
-    U <-- "TCP :5555" --> PY[Python<br>YOLOv8 + OpenCV]
+    U <-- "TCP :5555" --> PY[Python<br>YOLO + OpenCV]
     CAM[IP kamera] -- MJPEG --> PY
     U -- "Bluetooth (HC-06)" --> AR[Arduino]
     US[2 × ultrasonik] --> AR
